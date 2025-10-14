@@ -67,3 +67,28 @@ git push
 ```bash
 git log
 ```
+
+## 코드리뷰 요청 및 반영
+
+### Pull Request(PR) 생성
+
+GitHub, GitLab 등에서 브랜치를 푸시한 후 웹에서 PR을 생성합니다.
+
+### PR 관련 명령어
+
+```bash
+# PR 대상 브랜치로 이동
+git checkout <feature-branch>
+
+# 변경 사항 푸시
+git push origin <feature-branch>
+```
+
+### 코드리뷰 반영 후
+
+```bash
+# 리뷰 반영 후 커밋
+git add <수정파일>
+git commit -m "리뷰 반영: <내용>"
+git push origin <feature-branch>
+```
